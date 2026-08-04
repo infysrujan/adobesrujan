@@ -48,4 +48,4 @@ function getOTP()
 }
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days, submitFormArrayToString };
-export {getOTTP };
+//export {getOTTP };
