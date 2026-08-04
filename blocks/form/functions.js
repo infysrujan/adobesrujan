@@ -41,11 +41,6 @@ function days(endDate, startDate) {
   const diffInMs = Math.abs(end.getTime() - start.getTime());
   return Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 }
-//srujan
-function getOTP()
-{
-  return 9090;
-}
+
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days, submitFormArrayToString };
-//export {getOTTP };
