@@ -44,3 +44,7 @@ function days(endDate, startDate) {
 
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days, submitFormArrayToString };
+
+function getEMI(principal, rate, tenure) {
+  return (principal * rate * Math.pow(1 + rate, tenure)) / (Math.pow(1 + rate, tenure) - 1);
+}
