@@ -42,9 +42,8 @@ function days(endDate, startDate) {
   return Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 }
 
-// eslint-disable-next-line import/prefer-default-export
-export { getFullName, days, submitFormArrayToString };
-
 function getEMI(principal, rate, tenure) {
   return (principal * rate * Math.pow(1 + rate, tenure)) / (Math.pow(1 + rate, tenure) - 1);
 }
+// eslint-disable-next-line import/prefer-default-export
+export { getFullName, days, submitFormArrayToString, getEMI };
