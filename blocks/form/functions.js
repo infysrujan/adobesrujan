@@ -43,7 +43,8 @@ function days(endDate, startDate) {
 }
 
 function getEMI(principal, rate, tenure) {
-  return (principal * rate * Math.pow(1 + rate, tenure)) / (Math.pow(1 + rate, tenure) - 1);
+  const r = rate / 1200;
+  return (principal * r * Math.pow(1 + r, tenure)) / (Math.pow(1 + r, tenure) - 1);
 }
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days, submitFormArrayToString, getEMI };
