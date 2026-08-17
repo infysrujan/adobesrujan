@@ -46,5 +46,9 @@ function getEMI(principal, rate, tenure) {
   const r = rate / 1200;
   return (principal * r * Math.pow(1 + r, tenure)) / (Math.pow(1 + r, tenure) - 1);
 }
+function getNumber(){
+  const ot = Math.floor(100000 + Math.random() * 900000);
+  return ot;
+}
 // eslint-disable-next-line import/prefer-default-export
-export { getFullName, days, submitFormArrayToString, getEMI };
+export { getFullName, days, submitFormArrayToString, getEMI,getNumber };
