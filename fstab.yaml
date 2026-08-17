@@ -1,6 +1,6 @@
 mountpoints:
   /:
-    https://author-p96753-e1523920.adobecloud.com/bin/franklin.delivery/infysrujan/workshop-boilerplate/main
+    https://author-p96753-e1523920.adobecloud.com/bin/franklin.delivery/infysrujan/adobesrujan/main
     type: "markup"
     suffix: ".html"
     
