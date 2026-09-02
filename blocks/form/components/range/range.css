@@ -41,7 +41,7 @@ main .form .range-widget-wrapper.decorated input[type="range"]:focus {
 .range-widget-wrapper.decorated .range-max {
     font-size: 14px;
     line-height: 22px;
-    color: #494f50;
+    color: #FFA500;
     margin-top: 16px;
     display: inline-block;
 }
