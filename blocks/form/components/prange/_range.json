@@ -1,16 +1,16 @@
 {
     "definitions": [
       {
-        "title": "Range",
-        "id": "range",
+        "title": "LRange",
+        "id": "range1",
         "plugins": {
           "xwalk": {
             "page": {
               "resourceType": "core/fd/components/form/numberinput/v1/numberinput",
               "template": {
-                "jcr:title": "Range",
+                "jcr:title": "PRange",
                 "fieldType": "number-input",
-                "fd:viewType": "range",
+                "fd:viewType": "range1",
                 "enabled": true,
                 "visible": true
               }
@@ -21,7 +21,7 @@
     ],
     "models": [
       {
-        "id": "range",
+        "id": "range1",
         "fields": [
           {
             "component": "tab",
