@@ -30,7 +30,7 @@ export default function decorate(fieldDiv, fieldJson) {
   amountInput.type = 'text';
   amountInput.className = 'loan-amount-input';
   amountInput.value = '';
-  amountInput.placeholder = 'Enter loan amount';
+  amountInput.placeholder = 'EMI amount';
   amountInput.setAttribute('aria-label', 'EMI Amount');
 
   const separator = document.createElement('div');
