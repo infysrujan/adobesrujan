@@ -16,8 +16,8 @@
               "loanTitle": "Avail XPRESS Personal Loan of",
               "loanAmount": "",
               "interestRate": "9.5% p.a.",
-              "processingFee": "₹5,000",
-              "tenure": "5 years",
+              "processingFee": "₹4,000",
+              "tenure": "",
               "noticeText": "The principal offer is subject to credit review, basis which the loan amount may be down-sized or rejected."
             }
           }
@@ -64,7 +64,7 @@
           "label": "Processing Fee",
           "valueType": "string",
           "description": "Processing fee shown in the summary card",
-          "value": "₹5,000"
+          "value": "₹4,000"
         },
         {
           "component": "text",
@@ -72,7 +72,7 @@
           "label": "Tenure",
           "valueType": "string",
           "description": "Tenure shown in the summary card",
-          "value": "5 years"
+          "value": ""
         },
         {
           "component": "text",
