@@ -31,7 +31,7 @@
     font-size: clamp(2.2rem, 3vw, 3rem);
     line-height: 1.2;
     font-weight: 700;
-    color: #000;
+    color: #1c1c1c;
     margin-bottom: 22px;
     word-break: break-word;
 }
@@ -79,8 +79,8 @@
 
 /* Individual detail */
 .loan-summary-card .loan-detail {
-    border-left: 4px solid #ffa500;
-    padding-left: 14px;
+    border-left: 2px solid #e7c76b;
+    padding-left: 12px;
     min-height: 68px;
 }
 
