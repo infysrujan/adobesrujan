@@ -62,7 +62,7 @@ export default function decorate(fieldDiv, fieldJson) {
   const tenureInput = document.createElement('input');
   tenureInput.type = 'text';
   tenureInput.className = 'loan-tenure-input';
-  tenureInput.value = defaultTenure;
+  tenureInput.value = '';
   tenureInput.placeholder = 'Enter tenure';
   tenureInput.setAttribute('aria-label', 'Tenure');
 

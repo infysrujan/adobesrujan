@@ -59,6 +59,7 @@ main .form .range-widget-wrapper.decorated input[type="range"]:focus {
     display: block;
     padding-bottom: 0;
     margin-bottom: 0;
+    background: transparent;
 }
 
 /* Min/Max labels */
