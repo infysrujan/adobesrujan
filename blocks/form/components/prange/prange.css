@@ -1,7 +1,7 @@
 function updateBubble(input, element) {
-  const step = input.step || 1;
-  const max = input.max || 10;
-  const min = input.min || 1;
+  const step = input.step || 10000;
+  const max = input.max || 1500000;
+  const min = input.min || 1000;
   const value = input.value || 1;
   const current = Math.ceil((value - min) / step);
   const total = Math.ceil((max - min) / step);
