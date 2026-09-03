@@ -3,8 +3,9 @@ export default function decorate(fieldDiv, fieldJson) {
   const title = properties.loanTitle || 'Avail XPRESS Personal Loan of';
   const defaultAmount = properties.loanAmount || '₹15,00,000';
   const interestRate = properties.interestRate || '9.5% p.a.';
-  const processingFee = properties.Taxes || '₹4,000';
-  const noticeText = properties.noticeText || 'The principal offer is subject to credit review, basis which the loan amount may be down-sized or rejecyed.';
+  const processingFee = properties.processingFee || '₹5,000';
+  const defaultTenure = properties.tenure || '5 years';
+  const noticeText = properties.noticeText || 'Loan subject to eligibility and final approval.';
 
   const card = document.createElement('article');
   card.className = 'loan-summary-card';
@@ -53,6 +54,7 @@ export default function decorate(fieldDiv, fieldJson) {
   const rateDetail = createDetail('Interest Rate', interestRate);
   const feeDetail = createDetail('Processing Fee', processingFee);
   const tenureDetail = createDetail('Tenure', defaultTenure);
+  const taxesDetail = createDetail('Taxes', 'As applicable');
 
   const tenureInput = document.createElement('input');
   tenureInput.type = 'text';
