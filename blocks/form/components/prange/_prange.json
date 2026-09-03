@@ -46,10 +46,35 @@
           },
           {
             "component": "number",
+            "name": "minValue",
+            "label": "Minimum Value",
+            "valueType": "number",
+            "description": "Minimum value for the range",
+            "default": 50000
+          },
+          {
+            "component": "number",
+            "name": "maxValue",
+            "label": "Maximum Value",
+            "valueType": "number",
+            "description": "Maximum value for the range",
+            "default": 1500000
+          },
+          {
+            "component": "number",
+            "name": "defaultValue",
+            "label": "Default Value",
+            "valueType": "number",
+            "description": "Starting value for the range",
+            "default": 50000
+          },
+          {
+            "component": "number",
             "name": "stepValue",
             "label": "Step Value",
             "valueType": "number",
-            "description": "Step value for the range"
+            "description": "Step value for the range",
+            "default": 5000
           },
           {
             "...": "../../models/form-common/_help-container.json#/fields"
