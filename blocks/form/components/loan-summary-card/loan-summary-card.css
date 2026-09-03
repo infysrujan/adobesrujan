@@ -36,22 +36,31 @@
     word-break: break-word;
 }
 
+.loan-summary-card .loan-amount-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0 10px;
+    flex-wrap: wrap;
+}
+
 .loan-summary-card .loan-amount-label {
     display: block;
-    margin-bottom: 4px;
     font-size: 11px;
     font-weight: 600;
     color: #333;
+    min-width: 100px;
 }
 
 .loan-summary-card .loan-amount-input,
 .loan-summary-card .loan-tenure-input {
+    flex: 1 1 160px;
     width: 100%;
     border: 1px solid #d3d3d3;
     border-radius: 10px;
     padding: 7px 9px;
     font-size: 12px;
-    margin-bottom: 8px;
+    margin-bottom: 0;
     background: #fff;
     box-sizing: border-box;
     min-height: 30px;

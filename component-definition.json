@@ -717,11 +717,11 @@
                   "visible": true,
                   "enabled": true,
                   "loanTitle": "Avail XPRESS Personal Loan of",
-                  "loanAmount": "₹15,00,000",
+                  "loanAmount": "",
                   "interestRate": "9.5% p.a.",
-                  "processingFee": "₹5,000",
-                  "tenure": "5 years",
-                  "noticeText": "Loan subject to eligibility and final approval."
+                  "processingFee": "₹4,000",
+                  "tenure": "",
+                  "noticeText": "The principal offer is subject to credit review, basis which the loan amount may be down-sized or rejected."
                 }
               }
             }

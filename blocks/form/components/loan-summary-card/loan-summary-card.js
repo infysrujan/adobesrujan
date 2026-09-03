@@ -22,16 +22,22 @@ export default function decorate(fieldDiv, fieldJson) {
   titleEl.className = 'loan-title';
   titleEl.textContent = title;
 
+  const amountRow = document.createElement('div');
+  amountRow.className = 'loan-amount-row';
+
   const amountLabel = document.createElement('label');
   amountLabel.className = 'loan-amount-label';
-  amountLabel.textContent = 'EMI Amount';
+  amountLabel.textContent = 'Loan Amount (INR)';
 
   const amountInput = document.createElement('input');
   amountInput.type = 'text';
   amountInput.className = 'loan-amount-input';
-  amountInput.value = '';
-  amountInput.placeholder = 'EMI amount';
-  amountInput.setAttribute('aria-label', 'EMI Amount');
+  amountInput.value = defaultAmount;
+  amountInput.placeholder = 'Loan amount';
+  amountInput.setAttribute('aria-label', 'Loan Amount (INR)');
+  amountInput.readOnly = true;
+
+  amountRow.append(amountLabel, amountInput);
 
   const separator = document.createElement('div');
   separator.className = 'separator';
@@ -93,7 +99,7 @@ export default function decorate(fieldDiv, fieldJson) {
     taxesDetail.item,
   );
 
-  content.append(titleEl, amountDisplay, amountLabel, amountInput, separator, details);
+  content.append(titleEl, amountRow, separator, details);
   card.append(content, notice);
   fieldDiv.innerHTML = '';
   fieldDiv.append(card);
