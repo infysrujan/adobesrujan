@@ -4478,7 +4478,7 @@
         "label": "Minimum Value",
         "valueType": "number",
         "description": "Minimum value for the range",
-        "default": 50000
+        "default": 10000
       },
       {
         "component": "number",
@@ -4494,7 +4494,7 @@
         "label": "Default Value",
         "valueType": "number",
         "description": "Starting value for the range",
-        "default": 50000
+        "default": 10000
       },
       {
         "component": "number",
@@ -4502,7 +4502,7 @@
         "label": "Step Value",
         "valueType": "number",
         "description": "Step value for the range",
-        "default": 5000
+        "default": 10000
       },
       {
         "component": "number",
@@ -4510,7 +4510,7 @@
         "label": "Minimum Value (legacy)",
         "valueType": "number",
         "description": "Legacy minimum value field",
-        "default": 50000
+        "default": 10000
       },
       {
         "component": "number",
@@ -4526,7 +4526,7 @@
         "label": "Default Value (legacy)",
         "valueType": "number",
         "description": "Legacy starting value field",
-        "default": 50000
+        "default": 10000
       },
       {
         "component": "number",
@@ -4534,7 +4534,7 @@
         "label": "Step Value (legacy)",
         "valueType": "number",
         "description": "Legacy step value field",
-        "default": 5000
+        "default": 10000
       },
       {
         "component": "tab",
