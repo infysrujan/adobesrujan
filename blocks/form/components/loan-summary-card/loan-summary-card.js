@@ -57,7 +57,7 @@ export default function decorate(fieldDiv, fieldJson) {
 
   const rateDetail = createDetail('Interest Rate', interestRate);
   const tenureDetail = createDetail('Tenure', defaultTenure);
-  const taxesDetail = createDetail('Taxes', 'As applicable');
+  const taxesDetail = createDetail('Taxes', '₹4,000');
 
   const tenureInput = document.createElement('input');
   tenureInput.type = 'text';
