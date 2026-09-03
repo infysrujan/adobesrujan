@@ -29,10 +29,39 @@ function updateBubble(input, element) {
 export default async function decorate(fieldDiv, fieldJson) {
   const input = fieldDiv.querySelector('input');
   const properties = fieldJson?.properties || {};
-  const minValue = Number(properties.minValue ?? properties.min ?? input.min ?? 50000);
-  const maxValue = Number(properties.maxValue ?? properties.max ?? input.max ?? 1500000);
-  const defaultValue = Number(properties.defaultValue ?? properties.value ?? input.value ?? minValue);
-  const stepValue = Number(properties.stepValue ?? properties.step ?? 5000);
+  const minValue = Number(
+    fieldJson?.minimum
+    ?? fieldJson?.min
+    ?? properties.minimum
+    ?? properties.minValue
+    ?? properties.min
+    ?? input.min
+    ?? 10000,
+  );
+  const maxValue = Number(
+    fieldJson?.maximum
+    ?? fieldJson?.max
+    ?? properties.maximum
+    ?? properties.maxValue
+    ?? properties.max
+    ?? input.max
+    ?? 1500000,
+  );
+  const defaultValue = Number(
+    fieldJson?.value
+    ?? fieldJson?.defaultValue
+    ?? properties.value
+    ?? properties.defaultValue
+    ?? input.value
+    ?? minValue,
+  );
+  const stepValue = Number(
+    fieldJson?.step
+    ?? properties.step
+    ?? properties.stepValue
+    ?? input.step
+    ?? 10000,
+  );
 
   input.type = 'range';
   input.min = minValue;
