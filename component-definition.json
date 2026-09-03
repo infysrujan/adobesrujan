@@ -684,6 +684,24 @@
               }
             }
           }
+        },
+        {
+          "title": "PRange",
+          "id": "prange",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/fd/components/form/numberinput/v1/numberinput",
+                "template": {
+                  "jcr:title": "PRange",
+                  "fieldType": "number-input",
+                  "fd:viewType": "prange",
+                  "enabled": true,
+                  "visible": true
+                }
+              }
+            }
+          }
         }
       ]
     }

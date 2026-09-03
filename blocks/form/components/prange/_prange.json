@@ -2,7 +2,7 @@
     "definitions": [
       {
         "title": "PRange",
-        "id": "range1",
+        "id": "prange",
         "plugins": {
           "xwalk": {
             "page": {
@@ -10,7 +10,7 @@
               "template": {
                 "jcr:title": "PRange",
                 "fieldType": "number-input",
-                "fd:viewType": "range1",
+                "fd:viewType": "prange",
                 "enabled": true,
                 "visible": true
               }
@@ -21,7 +21,7 @@
     ],
     "models": [
       {
-        "id": "range1",
+        "id": "prange",
         "fields": [
           {
             "component": "tab",
