@@ -62,6 +62,15 @@ main .form .range-widget-wrapper.decorated input[type="range"]:focus {
 }
 
 /* Min/Max labels */
+.range-widget-wrapper.decorated .range-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    margin-top: 2px;
+}
+
 .range-widget-wrapper.decorated .range-min,
 .range-widget-wrapper.decorated .range-max {
     font-size: 14px;
@@ -72,5 +81,6 @@ main .form .range-widget-wrapper.decorated input[type="range"]:focus {
 }
 
 .range-widget-wrapper.decorated .range-max {
-    float: right;
+    float: none;
+    margin-left: auto;
 }

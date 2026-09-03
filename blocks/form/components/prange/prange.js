@@ -35,13 +35,16 @@ export default async function decorate(fieldDiv, fieldJson) {
   rangeMinEl.className = 'range-min';
   const rangeMaxEl = document.createElement('span');
   rangeMaxEl.className = 'range-max';
+  const rangeLabels = document.createElement('div');
+  rangeLabels.className = 'range-labels';
   rangeMinEl.innerText = `${input.min || 1}`;
   rangeMaxEl.innerText = `${input.max}`;
   div.appendChild(hover);
   // move the input element within the wrapper div
   div.appendChild(input);
-  div.appendChild(rangeMinEl);
-  div.appendChild(rangeMaxEl);
+  rangeLabels.appendChild(rangeMinEl);
+  rangeLabels.appendChild(rangeMaxEl);
+  div.appendChild(rangeLabels);
   input.addEventListener('input', (e) => {
     updateBubble(e.target, div);
   });
