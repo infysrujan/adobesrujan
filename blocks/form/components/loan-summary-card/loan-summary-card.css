@@ -1,9 +1,9 @@
 /* Right side - Available Loan Card */
 .loan-summary-card {
     width: 100%;
-    max-width: 648px;
-    min-width: 230px;
-    min-height: 158px;
+    max-width: 518px;
+    min-width: 184px;
+    min-height: 126px;
     background: #f7f7f7;
     border-radius: 20px;
     overflow: hidden;
@@ -15,7 +15,7 @@
 
 /* Card content */
 .loan-summary-card .loan-summary-content {
-    padding: 23px 23px 20px;
+    padding: 18px 18px 16px;
 }
 
 /* "Avail XPRESS Personal Loan of" */
@@ -28,18 +28,18 @@
 
 /* ₹15,00,000 */
 .loan-summary-card .loan-amount {
-    font-size: clamp(1.58rem, 2.16vw, 2.16rem);
+    font-size: clamp(1.27rem, 1.73vw, 1.73rem);
     line-height: 1.2;
     font-weight: 700;
     color: #1c1c1c;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     word-break: break-word;
 }
 
 .loan-summary-card .loan-amount-label {
     display: block;
-    margin-bottom: 6px;
-    font-size: 13px;
+    margin-bottom: 5px;
+    font-size: 12px;
     font-weight: 600;
     color: #333;
 }
@@ -49,26 +49,26 @@
     width: 100%;
     border: 1px solid #d3d3d3;
     border-radius: 10px;
-    padding: 9px 11px;
-    font-size: 14px;
-    margin-bottom: 12px;
+    padding: 8px 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
     background: #fff;
     box-sizing: border-box;
-    min-height: 38px;
+    min-height: 34px;
 }
 
 /* Dotted separator */
 .loan-summary-card .separator {
     border-top: 2px dotted #bdbdbd;
-    margin: 0 0 22px;
+    margin: 0 0 18px;
 }
 
 /* EMI / Rate / Taxes section */
 .loan-summary-card .loan-details {
     display: grid;
-    grid-template-columns: repeat(2, minmax(130px, 1fr));
-    column-gap: 20px;
-    row-gap: 14px;
+    grid-template-columns: repeat(2, minmax(110px, 1fr));
+    column-gap: 16px;
+    row-gap: 12px;
 }
 
 @media (width <= 600px) {
@@ -80,25 +80,25 @@
 /* Individual detail */
 .loan-summary-card .loan-detail {
     border-left: 2px solid #e7c76b;
-    padding-left: 10px;
-    min-height: 54px;
+    padding-left: 8px;
+    min-height: 46px;
 }
 
 /* Detail label */
 .loan-summary-card .loan-detail-label {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 17px;
     color: #333;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 /* Detail value */
 .loan-summary-card .loan-detail-value {
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    font-size: 15px;
-    line-height: 20px;
+    gap: 5px;
+    font-size: 13px;
+    line-height: 17px;
     font-weight: 500;
     color: #17252e;
 }
@@ -117,10 +117,10 @@
 .loan-summary-card .loan-notice {
     background: #d99a00;
     color: #fff;
-    padding: 14px 20px;
-    font-size: 12px;
-    line-height: 16px;
-    min-height: 60px;
+    padding: 12px 18px;
+    font-size: 11px;
+    line-height: 14px;
+    min-height: 50px;
     display: flex;
     align-items: center;
 }
