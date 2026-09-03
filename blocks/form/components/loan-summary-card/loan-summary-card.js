@@ -4,7 +4,7 @@ export default function decorate(fieldDiv, fieldJson) {
   const defaultAmount = properties.loanAmount || '₹15,00,000';
   const interestRate = properties.interestRate || '9.5% p.a.';
   const defaultTenure = properties.tenure || '5 years';
-  const noticeText = properties.noticeText || 'Loan subject to eligibility and final approval.';
+  const noticeText = properties.noticeText || 'The principal offer is subject to credit review, basis which the loan amount may be down-sized or rejected.';
 
   const card = document.createElement('article');
   card.className = 'loan-summary-card';
