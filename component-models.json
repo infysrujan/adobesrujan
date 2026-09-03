@@ -3872,6 +3872,81 @@
     ]
   },
   {
+    "id": "loan-summary-card",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "Basic",
+        "name": "basic"
+      },
+      {
+        "component": "text",
+        "name": "loanTitle",
+        "label": "Title",
+        "valueType": "string",
+        "description": "Heading text shown on the card",
+        "value": "Avail XPRESS Personal Loan of"
+      },
+      {
+        "component": "text",
+        "name": "loanAmount",
+        "label": "Loan Amount",
+        "valueType": "string",
+        "description": "Highlighted loan amount",
+        "value": "₹15,00,000"
+      },
+      {
+        "component": "text",
+        "name": "interestRate",
+        "label": "Interest Rate",
+        "valueType": "string",
+        "description": "Interest rate shown in the summary card",
+        "value": "9.5% p.a."
+      },
+      {
+        "component": "text",
+        "name": "processingFee",
+        "label": "Processing Fee",
+        "valueType": "string",
+        "description": "Processing fee shown in the summary card",
+        "value": "₹5,000"
+      },
+      {
+        "component": "text",
+        "name": "tenure",
+        "label": "Tenure",
+        "valueType": "string",
+        "description": "Tenure shown in the summary card",
+        "value": "5 years"
+      },
+      {
+        "component": "text",
+        "name": "noticeText",
+        "label": "Notice Text",
+        "valueType": "string",
+        "description": "Bottom notice text",
+        "value": "Loan subject to eligibility and final approval."
+      },
+      {
+        "component": "tab",
+        "label": "Help Content",
+        "name": "help"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Help text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "tooltip",
+        "label": "Short description",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "modal",
     "fields": [
       {

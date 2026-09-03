@@ -100,7 +100,8 @@
         "tnc",
         "wizard",
         "range",
-        "prange"
+        "prange",
+        "loan-summary-card"
       ]
     }
   ]

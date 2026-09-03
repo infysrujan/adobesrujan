@@ -702,6 +702,30 @@
               }
             }
           }
+        },
+        {
+          "title": "Loan Summary Card",
+          "id": "loan-summary-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/fd/components/form/panelcontainer/v1/panelcontainer",
+                "template": {
+                  "jcr:title": "Loan Summary Card",
+                  "fieldType": "panel",
+                  "fd:viewType": "loan-summary-card",
+                  "visible": true,
+                  "enabled": true,
+                  "loanTitle": "Avail XPRESS Personal Loan of",
+                  "loanAmount": "₹15,00,000",
+                  "interestRate": "9.5% p.a.",
+                  "processingFee": "₹5,000",
+                  "tenure": "5 years",
+                  "noticeText": "Loan subject to eligibility and final approval."
+                }
+              }
+            }
+          }
         }
       ]
     }

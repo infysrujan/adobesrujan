@@ -45,6 +45,9 @@
         },
         {
           "...": "../blocks/form/components/prange/_prange.json#/definitions"
+        },
+        {
+          "...": "../blocks/form/components/loan-summary-card/_loan-summary-card.json#/definitions"
         }
       ]
     }

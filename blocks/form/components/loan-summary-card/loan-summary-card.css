@@ -1,0 +1,80 @@
+/* Right side - Available Loan Card */
+.loan-summary-card {
+    width: 100%;
+    max-width: 500px;
+    background: #f7f7f7;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    color: #17252e;
+}
+
+/* Card content */
+.loan-summary-card .loan-summary-content {
+    padding: 35px 40px 30px;
+}
+
+/* "Avail XPRESS Personal Loan of" */
+.loan-summary-card .loan-title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* ₹15,00,000 */
+.loan-summary-card .loan-amount {
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+/* Dotted separator */
+.loan-summary-card .separator {
+    border-top: 2px dotted #bdbdbd;
+    margin: 0 0 30px;
+}
+
+/* EMI / Rate / Taxes section */
+.loan-summary-card .loan-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 25px;
+}
+
+/* Individual detail */
+.loan-summary-card .loan-detail {
+    border-left: 4px solid #ffa500;
+    padding-left: 14px;
+}
+
+/* Detail label */
+.loan-summary-card .loan-detail-label {
+    font-size: 16px;
+    line-height: 22px;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+/* Detail value */
+.loan-summary-card .loan-detail-value {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #17252e;
+}
+
+/* Bottom yellow information box */
+.loan-summary-card .loan-notice {
+    background: #d99a00;
+    color: #fff;
+    padding: 22px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+}
