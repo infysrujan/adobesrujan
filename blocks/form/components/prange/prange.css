@@ -1,6 +1,6 @@
 function updateBubble(input, element) {
   const step = input.step || 1;
-  const max = input.max || 0;
+  const max = input.max || 10;
   const min = input.min || 1;
   const value = input.value || 1;
   const current = Math.ceil((value - min) / step);
