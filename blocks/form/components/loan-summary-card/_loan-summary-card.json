@@ -48,7 +48,7 @@
           "label": "Loan Amount",
           "valueType": "string",
           "description": "Highlighted loan amount",
-          "value": "₹15,00,000"
+          "value": ""
         },
         {
           "component": "text",
@@ -80,7 +80,7 @@
           "label": "Notice Text",
           "valueType": "string",
           "description": "Bottom notice text",
-          "value": "Loan subject to eligibility and final approval."
+          "value": "The principal offer is subject to credit review, basis which the loan amount may be down-sized or rejected."
         },
         {
           "...": "../../models/form-common/_help-container.json#/fields"
