@@ -3,7 +3,6 @@ export default function decorate(fieldDiv, fieldJson) {
   const title = properties.loanTitle || 'Avail XPRESS Personal Loan of';
   const defaultAmount = properties.loanAmount || '₹15,00,000';
   const interestRate = properties.interestRate || '9.5% p.a.';
-  const processingFee = properties.processingFee || '₹5,000';
   const defaultTenure = properties.tenure || '5 years';
   const noticeText = properties.noticeText || 'Loan subject to eligibility and final approval.';
 
@@ -23,11 +22,16 @@ export default function decorate(fieldDiv, fieldJson) {
   titleEl.className = 'loan-title';
   titleEl.textContent = title;
 
+  const amountLabel = document.createElement('label');
+  amountLabel.className = 'loan-amount-label';
+  amountLabel.textContent = 'EMI Amount';
+
   const amountInput = document.createElement('input');
   amountInput.type = 'text';
   amountInput.className = 'loan-amount-input';
   amountInput.value = defaultAmount;
   amountInput.placeholder = 'Enter loan amount';
+  amountInput.setAttribute('aria-label', 'EMI Amount');
 
   const separator = document.createElement('div');
   separator.className = 'separator';
@@ -52,7 +56,6 @@ export default function decorate(fieldDiv, fieldJson) {
   };
 
   const rateDetail = createDetail('Interest Rate', interestRate);
-  const feeDetail = createDetail('Processing Fee', processingFee);
   const tenureDetail = createDetail('Tenure', defaultTenure);
   const taxesDetail = createDetail('Taxes', 'As applicable');
 
@@ -61,16 +64,10 @@ export default function decorate(fieldDiv, fieldJson) {
   tenureInput.className = 'loan-tenure-input';
   tenureInput.value = defaultTenure;
   tenureInput.placeholder = 'Enter tenure';
-
-  const tenureText = document.createElement('span');
-  tenureText.className = 'loan-tenure-text';
-  tenureText.textContent = defaultTenure;
+  tenureInput.setAttribute('aria-label', 'Tenure');
 
   tenureDetail.valueEl.innerHTML = '';
-  tenureDetail.valueEl.append(tenureText, tenureInput);
-  tenureInput.addEventListener('input', () => {
-    tenureText.textContent = tenureInput.value || '0 years';
-  });
+  tenureDetail.valueEl.append(tenureInput);
 
   const notice = document.createElement('div');
   notice.className = 'loan-notice';
@@ -92,12 +89,11 @@ export default function decorate(fieldDiv, fieldJson) {
 
   details.append(
     rateDetail.item,
-    feeDetail.item,
     tenureDetail.item,
     taxesDetail.item,
   );
 
-  content.append(titleEl, amountDisplay, amountInput, separator, details);
+  content.append(titleEl, amountDisplay, amountLabel, amountInput, separator, details);
   card.append(content, notice);
   fieldDiv.innerHTML = '';
   fieldDiv.append(card);

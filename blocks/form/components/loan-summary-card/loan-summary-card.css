@@ -5,7 +5,7 @@
     min-width: 320px;
     min-height: 220px;
     background: #f7f7f7;
-    border-radius: 20px;
+    border-radius: 999px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     color: #17252e;
@@ -34,6 +34,14 @@
     color: #000;
     margin-bottom: 22px;
     word-break: break-word;
+}
+
+.loan-summary-card .loan-amount-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
 }
 
 .loan-summary-card .loan-amount-input,
