@@ -7,9 +7,9 @@ function formatMoney(value) {
 }
 
 function updateBubble(input, element) {
-  const step = Number(input.step) || 1;
-  const max = Number(input.max) || 0;
-  const min = Number(input.min) || 1;
+  const step = Number(input.step) || 10000;
+  const max = Number(input.max) || 1500000;
+  const min = Number(input.min) || 10000;
   const value = Number(input.value) || min;
   const current = Math.ceil((value - min) / step);
   const total = Math.ceil((max - min) / step);
