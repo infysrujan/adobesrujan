@@ -46,7 +46,7 @@
           },
           {
             "component": "number",
-            "name": "minValue",
+            "name": "min",
             "label": "Minimum Value",
             "valueType": "number",
             "description": "Minimum value for the range",
@@ -54,7 +54,7 @@
           },
           {
             "component": "number",
-            "name": "maxValue",
+            "name": "max",
             "label": "Maximum Value",
             "valueType": "number",
             "description": "Maximum value for the range",
@@ -62,7 +62,7 @@
           },
           {
             "component": "number",
-            "name": "defaultValue",
+            "name": "value",
             "label": "Default Value",
             "valueType": "number",
             "description": "Starting value for the range",
@@ -70,10 +70,42 @@
           },
           {
             "component": "number",
-            "name": "stepValue",
+            "name": "step",
             "label": "Step Value",
             "valueType": "number",
             "description": "Step value for the range",
+            "default": 5000
+          },
+          {
+            "component": "number",
+            "name": "minValue",
+            "label": "Minimum Value (legacy)",
+            "valueType": "number",
+            "description": "Legacy minimum value field",
+            "default": 50000
+          },
+          {
+            "component": "number",
+            "name": "maxValue",
+            "label": "Maximum Value (legacy)",
+            "valueType": "number",
+            "description": "Legacy maximum value field",
+            "default": 1500000
+          },
+          {
+            "component": "number",
+            "name": "defaultValue",
+            "label": "Default Value (legacy)",
+            "valueType": "number",
+            "description": "Legacy starting value field",
+            "default": 50000
+          },
+          {
+            "component": "number",
+            "name": "stepValue",
+            "label": "Step Value (legacy)",
+            "valueType": "number",
+            "description": "Legacy step value field",
             "default": 5000
           },
           {
