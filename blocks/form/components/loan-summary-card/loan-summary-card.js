@@ -10,6 +10,12 @@ export default function decorate(fieldDiv, fieldJson) {
   const card = document.createElement('article');
   card.className = 'loan-summary-card';
 
+  fieldDiv.style.width = '100%';
+  fieldDiv.style.maxWidth = '900px';
+  fieldDiv.style.margin = '0 auto';
+  fieldDiv.style.display = 'block';
+  fieldDiv.style.minHeight = '100%';
+
   const content = document.createElement('div');
   content.className = 'loan-summary-content';
 
@@ -56,10 +62,14 @@ export default function decorate(fieldDiv, fieldJson) {
   tenureInput.value = defaultTenure;
   tenureInput.placeholder = 'Enter tenure';
 
-  tenureDetail.valueEl.textContent = defaultTenure;
-  tenureDetail.valueEl.append(tenureInput);
+  const tenureText = document.createElement('span');
+  tenureText.className = 'loan-tenure-text';
+  tenureText.textContent = defaultTenure;
+
+  tenureDetail.valueEl.innerHTML = '';
+  tenureDetail.valueEl.append(tenureText, tenureInput);
   tenureInput.addEventListener('input', () => {
-    tenureDetail.valueEl.textContent = tenureInput.value || '0 years';
+    tenureText.textContent = tenureInput.value || '0 years';
   });
 
   const notice = document.createElement('div');
